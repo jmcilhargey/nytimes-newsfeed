@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>News Top Stories</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css''>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body ng-app="newsApp">
+  <div class="container" ng-controller="NewsController">
+    <div class="header">
+      <h1>Front Page</h1>
+      <img src="http://graphics8.nytimes.com/packages/images/developer/logos/poweredby_nytimes_200a.png">
+    </div>
+    <div class="row">
+      <div class="well">
+        <!-- Toggle description on mouse enter / leave -->
+        <div class="post" ng-repeat="story in frontpage.results">
+          <!-- Insert directive template -->
+            <art-info></art-info>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
